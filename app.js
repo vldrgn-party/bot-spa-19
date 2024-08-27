@@ -1,6 +1,6 @@
 const TelegramBot = require('node-telegram-bot-api');
 
-const token = '7232972640:AAEYWHqH6ceaco3B71u-BBiLvKLSNYVHM4w';
+const token = '7284468266:AAEmqLECIDYknfiFt6sC4y_0EuTHtz6lybQ';
 
 const bot = new TelegramBot(token, { polling: true });
 
@@ -15,13 +15,13 @@ bot.on('message', async (msg) => {
                     [
                         {
                             text: "▶️ Играть сейчас",
-                            web_app: {url: "https://sky-game.cfd/s1v5WY"},
+                            web_app: {url: "https://pro-gaming.site/Xq8Bjp"},
                         },
                     ],
                     [
                         {
                             text: "🌐 Web - версия",
-                            url: "https://sky-game.cfd/s1v5WY",
+                            url: "https://pro-gaming.site/Xq8Bjp",
                         },
                     ],
                 ],
@@ -30,8 +30,8 @@ bot.on('message', async (msg) => {
         }
 
         if (text === '/start') {
-            await bot.sendPhoto(chatId, './img/home-2.jpg');
-            await bot.sendMessage(chatId, " 🔥 Лучшие условия ждут на Dragon Money: \n\n\n<b>🔸СРЕДНИЙ RTP 97%</b> \n\n<b>🔸БЕЗЛИМИТНЫЕ и БЫСТРЫЕ выплаты</b> \n\n<b>🔸10% КЕШБЭК</b> \n\n<b>🔸РОЗЫГРЫШИ И ПРОМИКИ ДЛЯ ИГРОКОВ</b> \n\n\n Жми на кнопку и выигрывай прямо в Telegram👇", menu_game) 
+            await bot.sendPhoto(chatId, './img/home.jpg');
+            await bot.sendMessage(chatId, "💰 Добро пожаловать в Dragon money! 🐉 \n\n Теперь вы можете играть в любимые \n игры прямо в телеграм!", menu_game)
         }
     }
     startBot()
